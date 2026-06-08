@@ -13,7 +13,7 @@ public class BrowserLaunch {
 	
 	public void print()
 	{
-		System.out.println("About to Launch Google Chrome");
+		System.out.println("About to Launch Google Chrome Browser");
 		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
