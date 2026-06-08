@@ -2,6 +2,7 @@ package testpackage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class BrowserLaunch {
@@ -21,4 +22,11 @@ public class BrowserLaunch {
 		System.out.println("Launched Google Chrome Successfully!");
 	}
 
+	@AfterMethod
+	public void closeBrowser() 
+	{
+	driver.quit();
+	System.out.println("Closed the Google Chrome Browser");
+	}
+	
 }
